@@ -1,1 +1,73 @@
-/*poop
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+/* General */
+a.custom-link {
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+a.custom-link:hover,
+a.custom-link:focus,
+a.custom-link:active,
+a.custom-link:visited {
+  color: #000000;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0FABFF;
+}
+
+nav {
+    display: flex;
+}
+
+/* Index Body */
+h1 {
+    text-align: center;
+}
+
+#index-body {
+    color: white;
+}
+
+.next-event {
+    text-align: center;
+    grid-area: 1 / 1;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) 4);
+    align-items: center;
+    justify-content: center;
+    background-color: #0FABFF;
+}
+
+.footer-text {
+    padding: 2%;
+}
+
+.Instagram {
+    display: flex;
+    justify-content: center;
+}
+
+.Instagram img {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
