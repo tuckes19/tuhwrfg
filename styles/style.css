@@ -48,6 +48,35 @@ h1 {
     grid-area: 1 / 1;
 }
 
+/* Vehicles Body */
+.vehicles-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.vehicle-photos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center; /* Horizontally center the photos */
+}
+
+.vehicle-photos img {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+.vehicle-descriptions {
+    display: flex; /* Use flexbox to center the text vertically */
+    flex-direction: column; /* Stack the text elements vertically */
+    justify-content: center; /* Vertically center the text */
+    align-items: center; /* Horizontally center the text */
+    font-size: 4vw;
+}
+
 /* Footer */
 .footer {
     display: grid;
