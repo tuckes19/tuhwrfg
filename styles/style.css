@@ -19,7 +19,9 @@ body {
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
     display: grid;
-    min-height: 100vh;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "header" "footer";
+    min-height: calc(100vh - 250px);
 }
 
 /* Header */
@@ -28,6 +30,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #0FABFF;
+    height: 50px;
 }
 
 nav {
