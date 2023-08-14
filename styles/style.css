@@ -61,6 +61,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    margin: 4vw;
 }
 
 .vehicle-photos {
@@ -71,14 +72,14 @@ h2 {
 .vehicle-photos img {
     width: 100%;
     height: auto;
-    border: 10px solid transparent;
+    border: .5vw solid #EA1C2D;
     box-sizing: border-box;
 }
 
 .vehicle-descriptions {
     display: flex; /* Use flexbox to center the text vertically */
     flex-direction: column; /* Stack the text elements vertically */
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 
 .vehicle-descriptions p {
@@ -86,6 +87,7 @@ h2 {
     justify-content: center;
     align-items: center; /* Horizontally center the text */
     flex-grow: 1; /* Allow description to grow and take up equal space */
+    flex-basis: 0;
     text-align: center;
     border: 10px solid transparent;
     box-sizing: border-box;
