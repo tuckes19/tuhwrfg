@@ -3,7 +3,7 @@
 /* General */
 a.custom-link {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 5vw, 2rem);
     margin: 0 10px;
     text-decoration: none;
 }
@@ -20,9 +20,17 @@ body {
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+    font-size: 10vw;
+}
+
 /* Header */
 header {
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     justify-content: space-around;
     align-items: center;
     background-color: #0FABFF;
@@ -34,29 +42,31 @@ nav {
 }
 
 /* Index Body */
-h1 {
-    text-align: center;
-    align-self: flex-end;
-    font-size: 2rem;
-}
-
 .index-body {
     display: grid;
     min-height: 100vh;
     align-items: center;
 }
 
+.index-body h1 {
+    align-self: flex-end;
+}
+
 .next-event {
     text-align: center;
     align-self: flex-start;
+    font-size: 5vw;
 }
 
 /* Vehicles Body */
-h2 {
-    text-align: center;
-    font-size: 2rem;
+.vehicles-body {
+    padding-top: 50px;
 }
 
+.vehicles-body h1 {
+    text-align: center;
+    font-size: 10vw;
+}
 .vehicles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,6 +101,22 @@ h2 {
     text-align: center;
     border: 10px solid transparent;
     box-sizing: border-box;
+}
+
+/* Past Events */
+.pastevents-body h1 {
+    align-self: flex-start;
+}
+
+.pastevents-body {
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.winter-2023-video {
+    align-items: center;
 }
 
 /* Footer */
