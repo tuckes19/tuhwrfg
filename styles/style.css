@@ -116,46 +116,86 @@ nav {
 
 .winter-2023 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.winter-2023-heading,
+.winter-2023-description {
+    grid-column: 2 / span 4;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vh;
 }
 
 .winter-2023-images {
-    grid-column: 2 / span 3; /* Start from the second column and span 3 columns */
-    display: flex;
+    display: grid;
     align-items: center;
+    justify-content: center;
     margin: 5%;
+    border: .5vw solid #0FABFF
 }
 
 .winter-2023-images:nth-child(1) {
-    grid-column: 2 / span 1;
+    grid-column: 0 / span 1; /* Position in the second column and span 1 column */
 }
 
 .winter-2023-images:nth-child(2) {
-    grid-column: 3 / span 1; /* Start from the third column and span 1 column */
+    grid-column: 1 / span 1; /* Position in the third column and span 1 column */
 }
 
 .winter-2023-images:nth-child(3) {
-    grid-column: 4 / span 1; /* Start from the fourth column and span 1 column */
+    grid-column: 2 / span 1; /* Position in the fourth column and span 1 column */
 }
 
-.winter-2023 img {
+.winter-2023-images:nth-child(4) {
+    grid-column: 3 / span 1; /* Position in the fifth column and span 1 column */
+}
+
+.winter-2023-images img {
     width: 100%;
     height: auto;
 }
 
 .winter-2023 .video {
-    grid-column: 2 / 5;
+    grid-column: 2 / 6;
     position: relative;
     margin: 2%;
     padding-bottom: 56.25%;
     overflow: hidden;
     align-items: center;
+    border: .5vw solid #0FABFF
 }
 
 .winter-2023 .video iframe {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/* For when the screen shrinks */
+@media (max-width: 768px) {
+    .winter-2023 {
+        grid-template-columns: repeat(1, 1fr); /* Change to a single column layout */
+    }
+
+    .winter-2023-heading,
+    .winter-2023-description,
+    .winter-2023-images,
+    .winter-2023 .video {
+        grid-column: 1 / span 1; /* Reset column placement */
+    }
+
+    .winter-2023-images:nth-child(1),
+    .winter-2023-images:nth-child(2),
+    .winter-2023-images:nth-child(3),
+    .winter-2023-images:nth-child(4) {
+        grid-row: auto; /* Reset the grid row for images */
+        grid-column: 1 / span 1; /* Reset the grid column for images */
+    }
+
+    .winter-2023 .video {
+        grid-row: auto; /* Reset the grid row for video */
+    }
 }
 
 /* Footer */
