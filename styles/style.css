@@ -8,11 +8,11 @@ a.custom-link {
     text-decoration: none;
 }
 
-a.custom-link:hover,
 a.custom-link:focus,
-a.custom-link:active,
-a.custom-link:visited {
-  color: #000000;
+a.custom-link:visited,
+a.custom-link:hover,
+a.custom-link:active {
+    color: #000000;
 }
 
 body {
@@ -177,8 +177,13 @@ nav {
     font-size: 4vh;
 }
 
+.winter-2023-heading {
+    margin-top: 15vh;
+}
+
 .winter-2023-description {
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .winter-2023-images {
@@ -186,7 +191,6 @@ nav {
     align-items: center;
     justify-content: center;
     margin: 5%;
-    border: .5vw solid #0FABFF
 }
 
 .winter-2023-images:nth-child(1) {
@@ -208,6 +212,7 @@ nav {
 .winter-2023-images img {
     width: 100%;
     height: auto;
+    border: .5vw solid #0FABFF;
 }
 
 .winter-2023 .video {
@@ -256,6 +261,7 @@ nav {
 .faq-body h1 {
     align-self: flex-start;
     padding-top: 40px;
+    margin-bottom: -5vh;
 }
 
 .faq-body {
@@ -295,6 +301,10 @@ nav {
 
 .footer-text {
     padding: 2%;
+}
+
+.footer-text-2 {
+    text-align: center;
 }
 
 .Instagram {
