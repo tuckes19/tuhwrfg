@@ -53,12 +53,12 @@ nav {
     align-self: flex-end;
 }
 
-.fall-2023{
+.winter-2024{
     text-align: center;
     margin: 4vw;
 }
 
-.fall-2023 img{
+.winter-2024 img{
     max-width: 75vw;
     max-height: 75vh;
     border: .5vw solid #F8DE08;
@@ -118,6 +118,55 @@ nav {
 .pastevents-body {
     display: grid;
     min-height: 100vh;
+}
+
+/* Fall 2023 Section */
+.fall-2023 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.fall-2023-heading {
+    grid-column: 2 / span 4;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vh;
+}
+
+.fall-2023-description {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 4; /* Row start / Column start / Row end / Column End */
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    font-size: 4vh;
+}
+
+.fall-2023-image {
+    display: grid;
+    grid-area: 2 / 4 / 3 / 6;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.fall-2023-image img {
+    border: .5vw solid #F8DE08;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .fall-2023 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fall-2023-heading,
+    .fall-2023-description,
+    .fall-2023-image {
+        grid-row: auto;
+        grid-column: 1 / span 1;
+    }
 }
 
 /* Spring 2023 Section */
